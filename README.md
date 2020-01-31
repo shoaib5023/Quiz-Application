@@ -1,7 +1,7 @@
 # Quiz_App
 
 
-# Question are given with  multiple choices to the end user,Timer has been set to answer the questions.
+## Question are given with  multiple choices to the end user,Timer has been set to answer the questions.
 
 
 
