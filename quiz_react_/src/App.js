@@ -15,16 +15,17 @@ class App extends Component {
       disabled:false,
       seconds:20,
       color:"white",
+      Time: new Date(),
 
     }
     this.refreshList = this.refreshList.bind(this)
   }
 
-  getStopTimer=(seconds)=> {
+  getStartTimer=(seconds)=> {
     
-    if (seconds >= 0) {
+    if (this.state.Time >= 0) {
         this.setState({ 
-          seconds :this.state.seconds - 1 });
+          Time :this.state.Time - 1 });
     }
 }
 
@@ -59,13 +60,14 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <div>
-            <button onClick={() => this.getStopTimer() }> start: {this.state.seconds}sec </button>
+      <div className="border">
+        <h4 className="choice2">  Quiz Application</h4>
+        <div className="choice2">
+            {/* <button onClick={() => this.getStartTimer() }>your time starts: {this.state.Time}sec </button><br></br> */}
         </div>
-        <div>  
-          <span> Correct Answer : {this.state.right} </span>
-          <span> Wrong Answer   : {this.state.wrong} </span>
+        <div >  <span className ="choice"> Correct Answer : {this.state.right} </span></div>
+          <div>
+          <span className ="choice1"> Wrong Answer   : {this.state.wrong} </span>
         </div>
         <div>
         {this.state.quiz.map((item, index) => (
