@@ -65,9 +65,13 @@ class App extends Component {
         <div className="choice2">
             {/* <button onClick={() => this.getStartTimer() }>your time starts: {this.state.Time}sec </button><br></br> */}
         </div>
+
+        <div className="bor">
+                
         <div >  <span className ="choice"> Correct Answer : {this.state.right} </span></div>
           <div>
           <span className ="choice1"> Wrong Answer   : {this.state.wrong} </span>
+        </div>
         </div>
         <div>
         {this.state.quiz.map((item, index) => (

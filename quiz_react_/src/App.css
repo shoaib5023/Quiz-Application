@@ -24,4 +24,11 @@
 .choice2{
   color: brown;
   font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.bor{
+  border:2px solid coral;
+  padding: 10px;
+  color:brown;
+
 }
