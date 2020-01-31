@@ -89,5 +89,5 @@ npm start
 The server has been set up and you are ready to go.
 
 "UI for Quiz Application "
-![ Image React user interface will look like this](/home/shoaib/Pictures/quizapp.png)
+![Image React user interface will look like this](quizapp.png)
 
